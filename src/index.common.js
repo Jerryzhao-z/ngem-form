@@ -1,5 +1,5 @@
 import angular from './angular-g';
-import hello from './directive/hello';
+import textfield from './directive/textfield';
 
 const ngModuleName = 'ngemForm';
 
@@ -7,4 +7,4 @@ export default ngModuleName;
 
 const ngModule = angular.module(ngModuleName, []);
 
-ngModule.directive('hello', hello);
+ngModule.directive('textfield', textfield);

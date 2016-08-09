@@ -1,4 +1,4 @@
 import index from './index.common';
-import './directive/hello.test';
+import './directive/textfield.test';
 
 export default index;

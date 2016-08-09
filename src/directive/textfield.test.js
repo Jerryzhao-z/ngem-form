@@ -10,7 +10,7 @@ describe("hello test", function() {
     }));
 
     it("should render a hello title", inject(function() {
-        var template = $compile("<div hello></div>")($scope);
+        var template = $compile("<div textfield></div>")($scope);
 
         $scope.$digest();
         var templateAsHtml = template.html();

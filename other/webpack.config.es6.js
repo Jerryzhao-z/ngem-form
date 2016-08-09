@@ -37,7 +37,7 @@ function getCommonConfig() {
         entry: './index.js',
         output: {
             libraryTarget: 'umd',
-            library: 'ngFormly'
+            library: 'ngemForm'
         },
         stats: {
             colors: true,
@@ -64,7 +64,7 @@ function getCommonConfig() {
 function getDevConfig() {
     return {
         output: {
-            filename: 'dist/formly.js'
+            filename: 'dist/ngemform.js'
         },
         module: {
             loaders: [
@@ -79,7 +79,7 @@ function getDevConfig() {
 function getProdConfig() {
     return {
         output: {
-            filename: 'dist/formly.min.js'
+            filename: 'dist/ngemform.min.js'
         },
         devtool: 'source-map',
         module: {
@@ -132,11 +132,11 @@ function getTestConfig() {
 function getJavaScriptLoader() {
     return {
         test: /\.js$/,
-        loaders: ['ng-annotate', 'babel', 'eslint?configFile=./other/src.eslintrc'],
+        loaders: ['ng-annotate', 'babel?presets[]=es2015', 'eslint?configFile=./other/src.eslintrc'],
         exclude: /node_modules/,
-        query: {
+        /*query: {
             presets: ['es2015']
-        }
+        }*/
     };
 }
 
