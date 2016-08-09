@@ -1,0 +1,24 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "no-invalid-this": 0,
+    "func-names": 0,
+    "new-cap": [
+      2, {
+        "newIsCap": true,
+        "capIsNew": true
+      }
+    ],
+    "max-params": [2, 10],
+    "max-statements": [2, 30]
+  },
+  "globals": {
+    "VERSION": false
+  }
+}
